@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#cf9aff,#95c0ff);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color:white;
+    padding: 70px;
+}
+h1{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#addNote{
+    width: 250px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+    background: linear-gradient(#9418fd,#571094);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 1s;
+}
+
+#addNote img{
+    width: 30px;
+}
+
+#addNote:hover{
+    background: linear-gradient(#6a10b8, #360a5c);
+}
+.note{
+    max-width: 600px;
+    min-height:300px ;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    color: black;
+    position: relative;
+    margin-bottom: 20px;
+}
+.note img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}

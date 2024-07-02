@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-462d1fe84b879d730fe2180b0e0354e0.css?vsn=d">
+    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <input type="text" class="display" id="display"  readonly>
+            <div class="keys">
+                <button onclick="appendToDisplay('+')" class="opperation"><i class="fa-solid fa-plus"></i></button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="opperation"><i class="fa-solid fa-minus"></i></button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="opperation"><i class="fa-solid fa-xmark"></i></button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="opperation"><i class="fa-solid fa-divide"></i></button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('0')" class="zero">0</button>
+                <button onclick="calculate()" class="opperation equale"><i class="fa-solid fa-equals"></i></button>
+                <button onclick="deletFromDisplay()" class="opperation">D</button>
+                <button onclick="clearDisplay()" class="opperation">C</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =========================================== -->
+    <script  src="javascript.js"></script>
+</body>
+</html>

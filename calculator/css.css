@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-image: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto 20px;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  background: hsl(0, 0%, 20%);
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+}
+.keys {
+  display: grid;
+  grid-template-columns: 90px 90px 90px 90px;
+  column-gap: 35px;
+  row-gap: 10px;
+}
+.keys button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 20%);
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.keys button.opperation {
+  background: #f09a36;
+}
+
+.keys button.zero {
+  grid-column: 3 / 5;
+  width: 225px;
+  border-radius: 50px;
+  margin-left: -10px;
+}
+.keys button.equale {
+  grid-column: 1 / 3;
+  width: 225px;
+  border-radius: 50px;
+}

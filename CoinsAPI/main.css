@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto Condensed';
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(255, 230, 129, 1) , rgba(255, 150, 172, 1) );
+}
+
+.box{
+  padding: 50px;
+  border-radius: 10px;
+  background-color: white;
+  min-width: 600px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+i{
+  text-align: center;
+}
+
+input{
+  padding: 10px;
+  width: 200px;
+}
+
+#reverse{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: .5s;
+}
+#reverse:hover{
+  background: #F5F5F5;
+}

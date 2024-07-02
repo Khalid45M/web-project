@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #13172f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 500px;
+  min-height: 600px;
+  background-color: white;
+  padding: 50px 20px 30px;
+  border-radius: 10px;
+  color:#13172f
+}
+
+.input-group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+}
+
+label{
+  font-size: 18px;
+  font-family:"Merriweather Sans",sans-serif; ;
+}
+
+input{
+  border-bottom: 2px solid #efefef;
+  flex: 1;
+  padding: 5px 0 10px;
+  font-size: 17px;
+  text-align: center;
+}
+textarea{
+  border-bottom: 2px solid #efefef;
+  flex: 1;
+  padding: 5px 0 10px;
+  font-size: 17px;
+  position: relative;
+  resize: none;
+}
+.submit-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.submit{
+  width: 45%;
+  padding: 10px;
+  border-radius: 5px;
+  background:#13172f ;
+  color:white;
+  font-size: 16px;
+}
+span{
+  position: absolute;
+    bottom: -35px;
+    right: 10px;
+    color: red;
+    font-size: 14px;
+}

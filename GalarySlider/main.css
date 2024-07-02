@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Merriweather Sans", sans-serif;;
+}
+
+
+body {
+  background: #191919;
+}
+.galary{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+  position: relative
+}
+.galary::-webkit-scrollbar{
+  display: none;
+}
+.galary div{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  width: 100%;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.galary div img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: .5s;
+  cursor: pointer;
+}
+.galary-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+#backBtn, #nextBtn{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+
+.galary div img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto Condensed';
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  rgba(255, 230, 129, 1)
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 70%;
+  min-height: 500px;
+  background-color: white;
+  padding: 30px 0;
+  border-radius: 10px;
+  align-items: center;
+}
+.container h2{
+  padding: 5px;
+  background-color: #e2e5de;
+  width: 100%;
+  text-align: center;
+}
+.game{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.key-color h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.key-color div{
+  padding: 10px 15px;
+  font-size: 21px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.key-color div span{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  display: inline-block;
+}
+.key-color div.case-one span{
+  background-color: #ff9e04;
+}
+.key-color div.case-two span{
+  background-color: #b2beb5;
+}
+.key-color div.case-three span{
+  background-color: #676767;
+}
+.game-area > span{
+  font-size: 20px;
+  color: #676767;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.game-area .tries{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom:10px ;
+}
+.game-area .tries .try{
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  color: rgb(129, 129, 129);
+}
+.game-area .tries.active .try{
+  color: black;
+}
+.game-area .tries .try input{
+  border: none ;
+  width: 40px;
+  height: 40px;
+  border-bottom:  2px solid #676767; 
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.game-area .tries .try input:focus{
+  background-color:#eaeded ;
+}
+
+.game-area .tries .try input.right-place{
+  background-color:#ff9e04 ;
+  border-color:#ff9e04 ;
+  color: white;
+}
+.game-area .tries .try input.right-not-place{
+  background-color:#b2beb5 ;
+  border-color:#b2beb5 ;
+  color: white;
+}
+.game-area .tries .try input.wronge{
+  background-color:#676767 ;
+  border-color:#676767 ;
+  color: white;
+}
+
+.game-area .btn{
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 5px;
+  color:white;
+  margin-top: 20px;
+  outline: none;
+}
+.game-area #check-btn{
+  background: #df482d;
+  padding: 10px 65px;
+}
+
+.game-area #check-btn:hover{
+  background: #ff684d;
+}
+.game-area #hints{
+  background: #7f9c86;
+  padding: 10px 15px;
+}
+.game-area #hints:hover{
+  background: #95ad9a;
+}
+#check-btn:disabled {
+  background-color: gray;
+}
+#check-btn:disabled:hover {
+  background-color: gray;
+}
+#hints:disabled {
+  background-color: gray;
+}
+#hints:disabled:hover {
+  background-color: gray;
+}
+
+.new-game {
+  padding: 10px 20px;
+  background: #ff9e04;
+  border-radius: 5px;
+  transition: .5s;
+  display: none;
+}
+
+.new-game:hover {
+  background: #fdbd55;
+}
+
+.letter-hint{
+  color:red;
+  font-weight: bold;
+}
+
+.result{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+   span{
+      color: #df482d;
+      text-transform: uppercase;
+    }
+
+}
+

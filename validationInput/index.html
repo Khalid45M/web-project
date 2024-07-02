@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-462d1fe84b879d730fe2180b0e0354e0.css?vsn=d">
+      
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+      
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+      
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+      
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+      
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d">
+
+</head>
+
+<body>
+
+  <div class="container">
+  <form action="">
+    <div class="input-group">
+      <label for="userName">Full Name:</label>
+      <input type="text" id="userName" onkeyup="validateName()">
+      <span id="nameError"></span>
+      
+    </div>
+    <div class="input-group">
+      <label for="number">phone Number:</label>
+      <input type="tel" id="number" onkeyup="validatePhone()" >
+      <span id="phoneError"></span>
+    </div>
+    <div class="input-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" onkeyup="validateEmail()">
+      <span id="emailError"></span>
+    </div>
+    <div class="input-group">
+      <label for="message">Your Message:</label>
+      <textarea id="message"  rows="5" ></textarea>
+    </div>
+    <div class="submit-section">
+      <button  class="submit" onclick="return validation()">submit</button>
+      <span id="submitError"></span>
+    </div>
+  </form>
+  </div>
+  <!-- ==================================================-->
+  <script src="javascript.js"></script>
+</body>
+
+</html>

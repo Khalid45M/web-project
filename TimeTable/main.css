@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Roboto Condensed';
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+
+table{
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+table tr:nth-child(odd) {
+  background-color: #fbfbfc;
+}
+
+table .head{
+  background: #fbfbfc;
+}
+table .head th{
+  padding: 20px;
+  font-size: 20px;
+}
+table td{
+  padding: 20px;
+  font-size: 20px;
+}
+
+table td.timer {
+  background-color: rgb(96, 208, 96);
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+table td.timerLess{
+  background-color: #f6dc04;
+  text-align: center;
+  padding: 20px 0;
+}
+
+td.btn{
+  text-align: center;
+}
+td.done{
+  background: red;
+  column-span: 3;
+  color:white;
+  text-align: center;
+}
+.start{
+  width: 60%;
+  padding:10px 0 ;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid #1da1f2;
+  outline: none;
+  background: white;
+  color: #1da1f2;
+  transition: .5s;
+}
+
+.start:hover {
+  background: #1da1f2;
+  color: white;
+}
